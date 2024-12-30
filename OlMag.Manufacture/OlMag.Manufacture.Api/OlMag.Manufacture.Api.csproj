@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>53f834a4-b01c-4d69-9685-a9b9e07c091a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OlMag.Manufacture.Application\OlMag.Manufacture.Application.csproj" />
+    <ProjectReference Include="..\OlMag.Manufacture.Core\OlMag.Manufacture.Core.csproj" />
+    <ProjectReference Include="..\OlMag.Manufacture.DataAccess\OlMag.Manufacture.DataAccess.csproj" />
+    <ProjectReference Include="..\OlMag.Manufacture.Infrastructure\OlMag.Manufacture.Infrastructure.csproj" />
+    <ProjectReference Include="..\OlMag.Manufacture.Persistece\OlMag.Manufacture.Persistece.csproj" />
+  </ItemGroup>
+
+</Project>
